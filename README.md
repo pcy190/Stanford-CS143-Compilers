@@ -55,3 +55,30 @@ Something Important to Check:
  -   whether the corresponding features of classes are legal
  -   whether the expressions type match its functional type
  -   Some symbols shouldn't be defined in the method formals, left_value, etc. 
+
+## Program Assignment 4
+
+> score : 63 / 63
+
+> File : PA5/
+
+To setup the spim and make the grading script happy, we should adjust the trap path.
+```
+sudo -p mkdir /usr/class/cs143/cool/lib
+sudo cp lib/trap.handler /usr/class/cs143/cool/lib/trap.handler
+```
+then edit the /usr/class/cs143/bin/spim script, add the param to the real spim binary (.i686/spim)
+```
+-trap_file /usr/class/cs143/cool/lib/trap.handler
+```
+
+
+Code the following structure
+```
+class name table
+class object table
+class method table
+class init table
+dispatch table
+prototype object
+```
